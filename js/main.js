@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initScrollTop();
   initAccordion();
   initSlider();
-  initCookieBanner()
+  initCookieBanner();
+  initVentWhale()
 });
 
 function initBurger() {
@@ -296,12 +297,52 @@ closeBtns.forEach(btn => {
   btn.addEventListener('click', closeModal);
 });
 
-wrapper.addEventListener('click', e => {
-  if (e.target === wrapper) closeModal();
-});
+if (wrapper) {
+    wrapper.addEventListener('click', e => {
+        if (e.target === wrapper) closeModal();
+    });
+}
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape' && wrapper.classList.contains('modal-wrapper--open')) {
     closeModal();
   }
 });
+
+
+function initVentWhale() {
+
+  const items = document.querySelectorAll(".vent-when-item");
+
+  if (!items.length) return;
+
+  // Определяем сенсорное устройство
+  const isTouchDevice = window.matchMedia(
+    "(hover: none), (pointer: coarse)"
+  ).matches;
+
+  // На ПК ничего не делаем — там работает CSS hover
+  if (!isTouchDevice) return;
+
+  items.forEach(item => {
+
+    item.addEventListener("click", () => {
+
+      // Проверяем, активен ли уже текущий пункт
+      const wasActive = item.classList.contains("is-active");
+
+      // Убираем активность со всех пунктов
+      items.forEach(el => {
+        el.classList.remove("is-active");
+      });
+
+      // Если нажали на неактивный пункт — активируем его
+      if (!wasActive) {
+        item.classList.add("is-active");
+      }
+
+    });
+
+  });
+
+}
