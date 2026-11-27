@@ -7,8 +7,22 @@
 
 	<title>Измерение шума, вибрации, микроклимата и освещённости на рабочих местах | КИТ-лаб</title>
 
+	<meta name="author" content="ООО КИТ-лаб">
+	<meta name="robots" content="index, follow, max-image-preview:large">
+	<meta name="theme-color" content="#3b66a5">
+	<meta property="og:locale" content="ru_BY">
+	<meta property="og:site_name" content="КИТ-лаб">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Измерение шума, вибрации, микроклимата и освещённости | КИТ-лаб">
+	<meta property="og:description"
+		content="Замеры шума, вибрации, микроклимата, освещённости и полей на рабочих местах для производственного контроля и аттестации рабочих мест. Могилёв, вся Беларусь.">
+	<meta property="og:url" content="https://kitlab.by/fizicheskie_faktory.html">
+	<meta property="og:image" content="https://kitlab.by/servises/fizicheskie_faktory.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Измерение физических факторов — ООО КИТ-лаб">
 	<meta name="description"
-		content="Измерение физических факторов производственной среды в Могилёве и по Беларуси: шум, общая и локальная вибрация, микроклимат, освещённость, электромагнитные и электростатические поля. Протоколы для производственного контроля и аттестации рабочих мест по условиям труда.">
+		content="Измерение физических факторов в Беларуси: шум, общая и локальная вибрация, микроклимат, освещённость, электромагнитные и электростатические поля. Протоколы измерений.">
 
 	<link rel="icon" href="/favicon.ico" sizes="any">
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -24,18 +38,106 @@
 	<link rel="stylesheet" href="./css/services.css">
 
 	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "Service",
-		"serviceType": "Измерение физических факторов на рабочих местах",
-		"provider": {
-			"@type": "Organization",
-			"name": "КИТ-лаб"
-		},
-		"url": "https://kitlab.by/fizicheskie_faktory.html",
-		"description": "Измерение шума, общей и локальной вибрации, параметров микроклимата, освещённости, электромагнитных и электростатических полей на рабочих местах для производственного контроля и аттестации рабочих мест по условиям труда."
-	}
-	</script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://kitlab.by/#organization",
+      "name": "ООО «КИТ-лаб»",
+      "alternateName": "КИТ-лаб",
+      "url": "https://kitlab.by/",
+      "email": "kitlab.by@gmail.com",
+      "telephone": [
+        "+375333709712",
+        "+375445695688"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Первомайская,99, офис 3",
+        "addressLocality": "Могилёв",
+        "postalCode": "212001",
+        "addressCountry": "BY"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Беларусь"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+375333709712",
+        "contactType": "customer service",
+        "availableLanguage": [
+          "Russian"
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://kitlab.by/#website",
+      "url": "https://kitlab.by/",
+      "name": "КИТ-лаб",
+      "publisher": {
+        "@id": "https://kitlab.by/#organization"
+      },
+      "inLanguage": "ru-BY"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://kitlab.by/fizicheskie_faktory.html#webpage",
+      "url": "https://kitlab.by/fizicheskie_faktory.html",
+      "name": "Измерение физических факторов",
+      "description": "Измерение физических факторов в Беларуси: шум, общая и локальная вибрация, микроклимат, освещённость, электромагнитные и электростатические поля. Протоколы измерений.",
+      "isPartOf": {
+        "@id": "https://kitlab.by/#website"
+      },
+      "about": {
+        "@id": "https://kitlab.by/#organization"
+      },
+      "inLanguage": "ru-BY"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://kitlab.by/fizicheskie_faktory.html#service",
+      "name": "Измерение физических факторов производственной среды",
+      "serviceType": "Измерение физических факторов производственной среды",
+      "description": "Инструментальные измерения шума, общей и локальной вибрации, параметров микроклимата, освещённости, электромагнитных и электростатических полей на рабочих местах.",
+      "url": "https://kitlab.by/fizicheskie_faktory.html",
+      "provider": {
+        "@id": "https://kitlab.by/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Беларусь"
+      },
+      "image": "https://kitlab.by/img/servises/fizicheskie_faktory.webp"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://kitlab.by/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Услуги",
+          "item": "https://kitlab.by/#area"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Измерение физических факторов",
+          "item": "https://kitlab.by/fizicheskie_faktory.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
 
 </head>
 
@@ -100,7 +202,7 @@
 							<p class="service-description">
 								Измеряем шум, вибрацию, микроклимат, освещённость, электромагнитные и электростатические поля
 								для производственного лабораторного контроля и аттестации рабочих мест по условиям труда.
-								Оформляем протоколы с фактическими значениями.
+								Оформляем протоколы.
 							</p>
 
 							<div class="service-actions">
