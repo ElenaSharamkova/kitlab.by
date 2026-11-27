@@ -183,7 +183,7 @@ section {
 .hero-button:hover {
 	scale: 0.95;
 }
-.btn_color {
+.btn-color {
 	background-color: var(--primary-color);
 	color: #ffffff;
 }
@@ -449,7 +449,7 @@ main {
 
 .card::before {
 	content: "";
-	background-image: url(../img/icons/whale1.png);
+	background-image: url(../img/icons/whale1.webp);
 	width: 60px;
 	height: 60px;
 	background-repeat: no-repeat;
@@ -741,11 +741,12 @@ legend {
 	margin-left: 4px;
 }
 .article .article-img--wide {
-	max-width: 100%;
+	max-width: 700px;
 	object-fit: cover;
 	width: 100%;
 	max-height: 420px;
 	margin-bottom: 20px;
+	align-self: center;
 }
 .article__title {
 	line-height: 1.25;

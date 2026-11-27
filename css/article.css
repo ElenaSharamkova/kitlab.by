@@ -29,12 +29,6 @@
 	margin-bottom: 20px;
 }
 
-.article-img {
-	max-width: 400px;
-	border-radius: 8px;
-	object-fit: cover;
-	box-shadow: -1px 4px 20px 12px rgba(34, 60, 80, 0.06);
-}
 .article__title {
 	font-size: 36px;
 }
